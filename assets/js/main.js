@@ -1,4 +1,9 @@
-
+/*=====================================================
+Template Name   : Eduka
+Description     : School, College, University And Courses HTML5 Template
+Author          : LunarTemp
+Version         : 1.0
+=======================================================*/
 
 
 (function ($) {
@@ -195,6 +200,17 @@
     }, {
         accY: -100
     });
+
+    $(document).ready(function () {
+        $('.popup-gallery').magnificPopup({
+            delegate: '.popup-img', // Selector for popup items
+            type: 'image',
+            gallery: {
+                enabled: true // Enable gallery mode
+            }
+        });
+    });
+
 
 
     // magnific popup init

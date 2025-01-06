@@ -1,4 +1,9 @@
-
+/*=====================================================
+Template Name   : Eduka
+Description     : School, College, University And Courses HTML5 Template
+Author          : LunarTemp
+Version         : 1.0
+=======================================================*/
 
 
 /*=====================================================
@@ -835,10 +840,29 @@ label {
 11. Header top css
 ======================*/
 
+/* Hide the logo by default */
+.mobile-logo {
+  display: none;
+}
+
+/* Show the logo only on mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .mobile-logo {
+      display: block;
+      text-align: center;
+      margin: 10px 0; /* Adjust spacing if needed */
+  }
+
+  .mobile-logo img {
+      max-width: 150px; /* Adjust the size of the logo */
+      height: auto;
+  }
+}
+
 .header-top {
   padding: 9px 0 10px 0;
   position: relative;
-  background: var(--theme-color);
+  background: white;
   z-index: 1;
 }
 
@@ -849,14 +873,15 @@ label {
   top: 0;
   bottom: -1px;
   width: 30%;
-  background: var(--theme-color2);
+  background:white;
   z-index: -1;
 }
 
 .header-top-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
 }
 
 .header-top-contact ul {
@@ -996,7 +1021,7 @@ label {
 }
 
 .navbar-brand img {
-  width: 170px;
+  width: 400px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -1049,7 +1074,7 @@ label {
     border-radius: 0px;
     border-top: 4px solid var(--theme-color2);
     background: var(--theme-color);
-    width: 220px;
+    width: auto;
     box-shadow: var(--box-shadow);
   }
 
@@ -1129,7 +1154,7 @@ label {
   }
 
   .navbar #main_nav {
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
   }
 
   /* nav right */
@@ -1271,6 +1296,8 @@ label {
   .nav-right {
     display: none;
   }
+
+  
 
 }
 
@@ -3073,6 +3100,151 @@ label {
 .event-slider .owl-nav .owl-next:hover{
 	right:-65px;
 }
+
+
+
+
+
+/* ===================
+30. Journalists css 
+====================== */
+
+.journalists-item{
+  position: relative;
+  background: #f2f3f5;
+  border-radius: 50px 50px 50px 0;
+  padding: 9px 20px 20px 20px;
+  margin-bottom: 25px;
+}
+
+.journalists-location{
+  margin-bottom: 12px;
+}
+
+.journalists-location i{
+  color: var(--theme-color2);
+}
+
+.journalists-img{
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px 40px 40px 0;
+}
+
+.journalists-img img{
+  border-radius: 40px 40px 40px 0;
+  box-shadow: var(--box-shadow);
+}
+
+.journalists-item:hover .event-img img{
+  transform: scale(1.1);
+} 
+
+.journalists-meta{
+  display: flex;
+  gap: 15px;
+  margin: 14px 0;
+}
+
+.journalists-meta i{
+  color: var(--theme-color2);
+  margin-right: 5px;
+}
+
+.journalists-title{
+  margin-bottom: 10px;
+}
+
+.journalists-title:hover{
+  color: var(--theme-color2);
+}
+
+.journalists-btn{
+  
+  margin-top: 20px;
+}
+
+.journalists-btn .theme-btn{
+  border-radius: 0px 0px 0px !important;
+  padding: 11px 15px;
+}
+
+.journalists-slider .event-item{
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.journalists-slider .owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.journalists-slider .owl-dots .owl-dot span {
+  background: var(--theme-color2);
+  border-radius: 50px;
+  margin: 5px;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.journalists-slider .owl-dots .owl-dot.active span {
+  background-color: var(--theme-color2);
+  width: 20px;
+}
+
+.journalists-slider .owl-nav {
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: var(--transition);
+	margin: 0;
+}
+
+.journalists-slider:hover .owl-nav{
+	display: block;
+	opacity:1;
+	visibility:visible;
+}
+
+.journalists-slider .owl-nav button {
+	height: 48px;
+	width: 48px;
+	line-height: 45px !important;
+	top: 50%;
+	background: var(--theme-color2) !important;
+	color: var(--color-white) !important;
+	font-size: 25px !important;
+	position: absolute;
+	border: none;
+	margin: 0;
+	padding: 0;
+	transition: var(--transition);
+	border-radius: 100%;
+	margin-top: -24px;
+}
+
+.journalists-slider .owl-nav button:hover{
+	background: var(--theme-color) !important;
+}
+
+.journalists-slider .owl-nav .owl-prev{
+	left:-75px;
+}
+
+.journalists-slider .owl-nav .owl-prev:hover{
+	left:-65px;
+}
+
+.journalists-slider .owl-nav .owl-next{
+	right:-75px;
+}
+
+.journalists-slider .owl-nav .owl-next:hover{
+	right:-65px;
+}
+
 
 
 
@@ -6412,3 +6584,6 @@ label {
 
 
 
+.fc-event {
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+}
