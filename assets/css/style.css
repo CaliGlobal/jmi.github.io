@@ -674,6 +674,21 @@ label {
   position: relative;
 }
 
+
+.site-title2 {
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 26px;
+  color:  var(--color-dark);
+  margin-top: 10px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.site-title2 span{
+  color: var(--theme-color2);
+}
+
 .site-title span{
   color: var(--theme-color2);
 }
@@ -793,7 +808,6 @@ label {
 }
 
 
-
 /*====================
 10. Scroll top css
 ======================*/
@@ -859,6 +873,7 @@ label {
   }
 }
 
+
 .header-top {
   padding: 9px 0 10px 0;
   position: relative;
@@ -881,7 +896,7 @@ label {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .header-top-contact ul {
@@ -1021,7 +1036,7 @@ label {
 }
 
 .navbar-brand img {
-  width: 400px;
+  width: 250px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -6586,4 +6601,35 @@ label {
 
 .fc-event {
   cursor: pointer; /* Changes cursor to a pointer on hover */
+}
+
+
+/* Style for the gallery image container */
+.gallery-img {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title overlay background */
+.gallery-title-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Title text styling */
+.gallery-title-overlay h4 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+
+.postgraduate-area li {
+
+  list-style: unset !important;
 }
